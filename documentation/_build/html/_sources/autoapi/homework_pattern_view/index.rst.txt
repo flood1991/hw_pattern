@@ -1,0 +1,89 @@
+:py:mod:`homework_pattern_view`
+===============================
+
+.. py:module:: homework_pattern_view
+
+.. autoapi-nested-parse::
+
+   Меню пользователей
+
+   Attributes:
+       menus (dict): Все возможные виды меню в зависимости от пользователей
+       user_type (str): Тип пользователя
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   homework_pattern_view.user_menu
+   homework_pattern_view.admin_menu
+   homework_pattern_view.support_menu
+   homework_pattern_view.server_admin_menu
+   homework_pattern_view.main_menu
+
+
+
+Attributes
+~~~~~~~~~~
+
+.. autoapisummary::
+
+   homework_pattern_view.user_type
+   homework_pattern_view.menus
+
+
+.. py:data:: user_type
+   :annotation: = user
+
+   
+
+.. py:function:: user_menu(user)
+
+   Меню пользователя
+
+   Args:
+       user (obj): Пользователь который вошел в систему
+
+
+.. py:function:: admin_menu(user)
+
+   Меню администратора
+
+   Args:
+       user (obj): пользователь с правами администратора
+
+
+.. py:function:: support_menu(user)
+
+   Меню службы поддержки
+
+   Args:
+       user (obj): Пользователь службы поддержки
+
+
+.. py:function:: server_admin_menu(user)
+
+   Меню сисадмина
+
+   Args:
+       user (obj): Пользователь с правами сисадмина
+
+
+.. py:data:: menus
+   
+
+   
+
+.. py:function:: main_menu()
+
+   Меню входа и регистрации
+       
+
+

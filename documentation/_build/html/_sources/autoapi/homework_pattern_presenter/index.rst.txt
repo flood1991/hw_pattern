@@ -1,0 +1,87 @@
+:py:mod:`homework_pattern_presenter`
+====================================
+
+.. py:module:: homework_pattern_presenter
+
+.. autoapi-nested-parse::
+
+   Действия пользователей
+
+   Attributes:
+       database (dict): База пользователей
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   homework_pattern_presenter.admin_check
+   homework_pattern_presenter.login
+   homework_pattern_presenter.registration
+   homework_pattern_presenter.user_action
+   homework_pattern_presenter.admin_action
+
+
+
+Attributes
+~~~~~~~~~~
+
+.. autoapisummary::
+
+   homework_pattern_presenter.database
+
+
+.. py:data:: database
+   
+
+   
+
+.. py:function:: admin_check(func)
+
+   Декоратор по проверке наличия прав администратора
+
+   Args:
+       func (func): действие администратора
+
+   Returns:
+       func: Действие которое может выполнить только администратор
+
+
+.. py:function:: login(auth_type='user')
+
+   Вход пользователей
+
+   Args:
+       auth_type (str, optional): Тип пользователя
+
+   Returns:
+       obj: Пользователя согласно введенным данным
+
+
+.. py:function:: registration(auth_type='user')
+
+   Регистрация пользователей
+
+   Args:
+       auth_type (str, optional): Тип пользователя
+
+
+.. py:function:: user_action(user)
+
+   Действие пользователя
+
+   Args:
+       user (obj): Пользователь который вошел в систему
+
+
+.. py:function:: admin_action(user)
+
+   Действия администратора
+
+
